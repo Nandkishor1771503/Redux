@@ -55,21 +55,14 @@ function JimmyChoo() {
       </div>
 
       <div
-        // overlay ${
-        //   count > 0 ? "block" : "hidden"
-        // }
-        className={`
-        w-[90%] h-[85%] absolute top-10 m-10 ml-16 p-10 rounded-xl bg-black border border-white `}
+        
       >
-        <HiMiniXMark
-          className="text-6xl ml-auto cursor-pointer"
-          onClick={() => {
-            setCount(count - 1);
-          }}
-        />
+       
         {Data && (
           <>
-            <div className="w-[90%] m-5 flex gap-20" key={Data.id}>
+            <div className= {` overlay ${
+        count > 0 ? "block" : "hidden"
+      }  w-[90%] m-5 flex gap-20`} key={Data.id}>
               <img
                 src={Data.source}
                 alt=""
